@@ -1,35 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ESP8266
-LIBS:doragasu
+EESchema Schematic File Version 4
 LIBS:mega-wifi-cache
 EELAYER 26 0
 EELAYER END
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 "CART AND TRANSCEIVERS"
 $EndDescr
 $Comp
-L MD-CART-FINGERS P2
+L doragasu:MD-CART-FINGERS P2
 U 1 1 56179054
 P 2450 4850
 F 0 "P2" H 2450 7437 60  0000 C CNN
@@ -57,7 +26,7 @@ F 3 "" H 2000 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74LVC162245 U6
+L doragasu:74LVC162245 U6
 U 2 1 561938BA
 P 4750 3150
 F 0 "U6" H 4750 2500 60  0000 C CNN
@@ -69,7 +38,7 @@ F 4 "74LVC162245ADGG:11" H 4750 3150 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74LVC162245 U6
+L doragasu:74LVC162245 U6
 U 1 1 5619397A
 P 4750 1750
 F 0 "U6" H 4750 1100 60  0000 C CNN
@@ -81,7 +50,7 @@ F 4 "74LVC162245ADGG:11" H 4750 1750 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74LVC162245 U8
+L doragasu:74LVC162245 U8
 U 2 1 56193A0C
 P 4750 7350
 F 0 "U8" H 4750 8000 60  0000 C CNN
@@ -268,7 +237,7 @@ Entry Wire Line
 Entry Wire Line
 	3750 5050 3850 4950
 $Comp
-L 74LVC162245 U8
+L doragasu:74LVC162245 U8
 U 1 1 56196C4D
 P 4750 5950
 F 0 "U8" H 4750 6600 60  0000 C CNN
@@ -800,7 +769,7 @@ NoConn ~ 1650 6950
 Text Label 5500 8650 2    60   ~ 0
 C_CLK
 $Comp
-L C C8
+L device:C C8
 U 1 1 561DA569
 P 1400 2900
 F 0 "C8" H 1425 3000 50  0000 L CNN
@@ -811,7 +780,7 @@ F 3 "" H 1400 2900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C7
+L device:CP C7
 U 1 1 561DA6C6
 P 1150 2900
 F 0 "C7" H 1175 3000 50  0000 L CNN
@@ -824,7 +793,7 @@ F 5 "UWJ0J220MCL1GB" H 1150 2900 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR4
+L power:GND #PWR4
 U 1 1 561DDDFF
 P 1400 3200
 F 0 "#PWR4" H 1400 2950 50  0001 C CNN
@@ -835,7 +804,7 @@ F 3 "" H 1400 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR2
+L power:+5V #PWR2
 U 1 1 561DF187
 P 1400 2600
 F 0 "#PWR2" H 1400 2450 50  0001 C CNN
@@ -846,7 +815,7 @@ F 3 "" H 1400 2600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR1
+L power:GND #PWR1
 U 1 1 561E4A8B
 P 5450 1350
 F 0 "#PWR1" H 5450 1100 50  0001 C CNN
@@ -857,7 +826,7 @@ F 3 "" H 5450 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR3
+L power:GND #PWR3
 U 1 1 561E5F8F
 P 5450 2750
 F 0 "#PWR3" H 5450 2500 50  0001 C CNN
@@ -868,7 +837,7 @@ F 3 "" H 5450 2750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR5
+L power:GND #PWR5
 U 1 1 561E6B00
 P 5450 4150
 F 0 "#PWR5" H 5450 3900 50  0001 C CNN
@@ -885,7 +854,7 @@ Text Label 5250 1650 0    60   ~ 0
 Text Label 6100 5650 2    60   ~ 0
 #W
 $Comp
-L R R11
+L device:R R11
 U 1 1 5620771C
 P 1350 5400
 F 0 "R11" H 1280 5354 50  0000 R CNN
@@ -897,7 +866,7 @@ F 4 "RMCF0805JT100K" H 1350 5400 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R15
+L device:R R15
 U 1 1 56207A0F
 P 1500 5150
 F 0 "R15" V 1600 5150 50  0000 C CNN
@@ -909,7 +878,7 @@ F 4 "RMCF0805JT47K0" V 1500 5150 60  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR6
+L power:GND #PWR6
 U 1 1 56212D5A
 P 1350 5550
 F 0 "#PWR6" H 1350 5300 50  0001 C CNN
@@ -978,7 +947,7 @@ UART inputs are 5V tolerant (but data lines aren't).\n
 Text Notes 800  10350 0    60   ~ 0
 3.3V linear regulator,\nIlimit,min = 1 A
 $Comp
-L C C9
+L device:C C9
 U 1 1 5625E0C9
 P 1700 9700
 F 0 "C9" H 1725 9800 50  0000 L CNN
@@ -990,7 +959,7 @@ F 4 "CL21F104ZBCNNNC" H 1700 9700 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C10
+L device:C C10
 U 1 1 5625E8FF
 P 2000 9700
 F 0 "C10" H 2025 9800 50  0000 L CNN
@@ -1001,7 +970,7 @@ F 3 "" H 2000 9700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C11
+L device:C C11
 U 1 1 5625EA93
 P 2300 9700
 F 0 "C11" H 2325 9800 50  0000 L CNN
@@ -1012,7 +981,7 @@ F 3 "" H 2300 9700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C12
+L device:C C12
 U 1 1 5625EC22
 P 2600 9700
 F 0 "C12" H 2625 9800 50  0000 L CNN
@@ -1023,7 +992,7 @@ F 3 "" H 2600 9700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C13
+L device:C C13
 U 1 1 5625EDB4
 P 2900 9700
 F 0 "C13" H 2925 9800 50  0000 L CNN
@@ -1034,7 +1003,7 @@ F 3 "" H 2900 9700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR10
+L power:GND #PWR10
 U 1 1 562608DD
 P 2450 10000
 F 0 "#PWR10" H 2450 9750 50  0001 C CNN
@@ -1045,7 +1014,7 @@ F 3 "" H 2450 10000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR9
+L power:VCC #PWR9
 U 1 1 56262FCA
 P 2450 9400
 F 0 "#PWR9" H 2450 9250 50  0001 C CNN
@@ -1056,7 +1025,7 @@ F 3 "" H 2450 9400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R14
+L device:R R14
 U 1 1 561B880E
 P 1500 4750
 F 0 "R14" V 1400 4750 50  0000 C CNN
@@ -1399,24 +1368,24 @@ Wire Wire Line
 Wire Wire Line
 	1050 8650 6150 8650
 Wire Wire Line
-	1650 3050 1650 3550
+	1650 3050 1650 3150
 Connection ~ 1650 3250
 Connection ~ 1650 3150
 Wire Wire Line
 	1650 2650 1650 2750
 Wire Wire Line
-	1150 2650 1650 2650
+	1150 2650 1400 2650
 Wire Wire Line
 	1150 2650 1150 2750
 Wire Wire Line
 	1150 3050 1150 3150
 Wire Wire Line
-	1150 3150 1650 3150
+	1150 3150 1400 3150
 Wire Wire Line
-	1400 3050 1400 3200
+	1400 3050 1400 3150
 Connection ~ 1400 3150
 Wire Wire Line
-	1400 2600 1400 2750
+	1400 2600 1400 2650
 Connection ~ 1400 2650
 Connection ~ 1650 2650
 Wire Wire Line
@@ -1425,8 +1394,6 @@ Wire Wire Line
 	1250 5850 1250 8550
 Wire Wire Line
 	1250 8550 5850 8550
-Wire Bus Line
-	3750 1650 3750 8150
 Wire Wire Line
 	1350 5150 1350 5250
 Wire Wire Line
@@ -1463,7 +1430,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 9550 1700 9450
 Wire Wire Line
-	1700 9450 3200 9450
+	1700 9450 2000 9450
 Wire Wire Line
 	2900 9450 2900 9550
 Wire Wire Line
@@ -1476,7 +1443,7 @@ Connection ~ 2000 9450
 Wire Wire Line
 	1700 9850 1700 9950
 Wire Wire Line
-	1700 9950 3200 9950
+	1700 9950 2000 9950
 Wire Wire Line
 	2900 9950 2900 9850
 Wire Wire Line
@@ -1501,7 +1468,7 @@ Entry Wire Line
 Text Notes 4750 9350 0    60   ~ 0
 UART mapped at 0xA130C1 (#C_TIME range).
 $Comp
-L AZ1117CH U4
+L doragasu:AZ1117CH U4
 U 1 1 56203BD5
 P 1150 10700
 F 0 "U4" H 1150 10950 40  0000 C CNN
@@ -1516,7 +1483,7 @@ $EndComp
 Text Notes 650  2150 0    60   ~ 0
 Locate caps near the 3.3V regulator input.\n
 $Comp
-L +5V #PWR11
+L power:+5V #PWR11
 U 1 1 56207F25
 P 700 10600
 F 0 "#PWR11" H 700 10450 50  0001 C CNN
@@ -1531,7 +1498,7 @@ Wire Wire Line
 Wire Wire Line
 	700  10650 750  10650
 $Comp
-L GND #PWR13
+L power:GND #PWR13
 U 1 1 56209B97
 P 1150 11050
 F 0 "#PWR13" H 1150 10800 50  0001 C CNN
@@ -1542,7 +1509,7 @@ F 3 "" H 1150 11050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C14
+L device:CP C14
 U 1 1 5620A5AC
 P 1800 10800
 F 0 "C14" H 1825 10900 50  0000 L CNN
@@ -1565,7 +1532,7 @@ Wire Wire Line
 	1800 10950 1150 10950
 Connection ~ 1150 10950
 $Comp
-L VCC #PWR12
+L power:VCC #PWR12
 U 1 1 5620D239
 P 1800 10600
 F 0 "#PWR12" H 1800 10450 50  0001 C CNN
@@ -1612,8 +1579,6 @@ C_A19
 Text Label 5250 1550 0    60   ~ 0
 A19
 NoConn ~ 1650 4850
-Wire Bus Line
-	5650 1650 5650 8450
 Wire Wire Line
 	5750 8350 6150 8350
 Wire Wire Line
@@ -1623,7 +1588,7 @@ Entry Wire Line
 Text Label 6100 7950 2    60   ~ 0
 #OE
 $Comp
-L C C15
+L device:C C15
 U 1 1 5695B5C9
 P 3200 9700
 F 0 "C15" H 3225 9800 50  0000 L CNN
@@ -1658,7 +1623,7 @@ Entry Wire Line
 Entry Wire Line
 	5650 8450 5750 8350
 Wire Wire Line
-	3250 7650 3650 7650
+	3250 7650 3550 7650
 Wire Wire Line
 	3250 7450 3650 7450
 Entry Wire Line
@@ -1666,7 +1631,7 @@ Entry Wire Line
 Entry Wire Line
 	3650 7650 3750 7750
 Wire Wire Line
-	2050 7550 2050 8050
+	2050 7550 2050 7900
 Wire Wire Line
 	2050 8050 3650 8050
 Entry Wire Line
@@ -1680,7 +1645,7 @@ Text Label 3250 8050 0    60   ~ 0
 Text Notes 2050 8250 0    60   ~ 0
 If assembling ONLY Flash (without\nUART), mount R17 instead of U5.
 $Comp
-L 74LVC245 U7
+L doragasu:74LVC245 U7
 U 1 1 562586F6
 P 4750 4550
 F 0 "U7" H 4750 3900 60  0000 C CNN
@@ -1715,7 +1680,7 @@ Text Label 4250 7750 2    60   ~ 0
 Text Label 6100 8350 2    60   ~ 0
 #C_TIME
 $Comp
-L 74LVC1G08GW U5
+L doragasu:74LVC1G08GW U5
 U 1 1 569F14E7
 P 2650 7550
 F 0 "U5" H 2650 7300 60  0000 C CNN
@@ -1727,7 +1692,7 @@ F 4 "74LVC1G08W5-7" H 2650 7550 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R17
+L device:R R17
 U 1 1 56965CA2
 P 2700 7900
 F 0 "R17" V 2800 7900 50  0000 C CNN
@@ -1746,7 +1711,7 @@ Wire Wire Line
 	3550 7900 3550 7650
 Connection ~ 3550 7650
 $Comp
-L R R16
+L device:R R16
 U 1 1 56C15D44
 P 1500 6550
 F 0 "R16" V 1600 6600 50  0000 R CNN
@@ -1761,19 +1726,19 @@ Wire Wire Line
 Wire Wire Line
 	1650 6550 1650 6650
 Wire Wire Line
-	1350 6550 1350 8750
+	1350 6550 1350 6850
 Wire Wire Line
 	1350 8750 6150 8750
 Wire Wire Line
 	950  4450 950  8850
 Wire Wire Line
-	950  8850 6150 8850
+	950  8850 1100 8850
 Wire Wire Line
-	850  4150 850  9000
+	850  4150 850  8950
 Wire Wire Line
 	850  8950 6150 8950
 $Comp
-L R R12
+L device:R R12
 U 1 1 56C2EF02
 P 1500 4150
 F 0 "R12" V 1600 4150 50  0000 C CNN
@@ -1784,7 +1749,7 @@ F 3 "" H 1500 4150 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R13
+L device:R R13
 U 1 1 56C2F106
 P 1500 4450
 F 0 "R13" V 1600 4450 50  0000 C CNN
@@ -1799,7 +1764,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 4450 950  4450
 $Comp
-L R R9
+L device:R R9
 U 1 1 56C318B7
 P 850 9150
 F 0 "R9" H 780 9104 50  0000 R CNN
@@ -1811,7 +1776,7 @@ F 4 "RMCF0805JT10K0" H 850 9150 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R10
+L device:R R10
 U 1 1 56C344D0
 P 1100 9150
 F 0 "R10" H 1030 9104 50  0000 R CNN
@@ -1826,7 +1791,7 @@ Wire Wire Line
 	1100 9000 1100 8850
 Connection ~ 1100 8850
 $Comp
-L GND #PWR8
+L power:GND #PWR8
 U 1 1 56C372F3
 P 1100 9300
 F 0 "#PWR8" H 1100 9050 50  0001 C CNN
@@ -1837,7 +1802,7 @@ F 3 "" H 1100 9300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR7
+L power:GND #PWR7
 U 1 1 56C37650
 P 850 9300
 F 0 "#PWR7" H 850 9050 50  0001 C CNN
@@ -1847,10 +1812,6 @@ F 3 "" H 850 9300 60  0000 C CNN
 	1    850  9300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	850  9300 850  9300
-Wire Wire Line
-	1100 9300 1100 9300
 $Sheet
 S 6150 6350 1000 2700
 U 5619415C
@@ -1881,7 +1842,7 @@ F23 "VSYNC" I L 6150 8950 60
 $EndSheet
 NoConn ~ 3250 6950
 $Comp
-L R R18
+L device:R R18
 U 1 1 57A27ECE
 P 1500 6850
 F 0 "R18" V 1600 6900 50  0000 R CNN
@@ -1892,4 +1853,50 @@ F 3 "" H 1500 6850 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 1350 6850
+Wire Wire Line
+	1650 3250 1650 3550
+Wire Wire Line
+	1650 3150 1650 3250
+Wire Wire Line
+	1400 3150 1650 3150
+Wire Wire Line
+	1400 3150 1400 3200
+Wire Wire Line
+	1400 2650 1650 2650
+Wire Wire Line
+	1400 2650 1400 2750
+Wire Wire Line
+	2600 9450 2900 9450
+Wire Wire Line
+	2300 9450 2450 9450
+Wire Wire Line
+	2000 9450 2300 9450
+Wire Wire Line
+	2000 9950 2300 9950
+Wire Wire Line
+	2300 9950 2450 9950
+Wire Wire Line
+	2600 9950 2900 9950
+Wire Wire Line
+	2900 9450 3200 9450
+Wire Wire Line
+	2900 9950 3200 9950
+Wire Wire Line
+	2450 9450 2600 9450
+Wire Wire Line
+	2450 9950 2600 9950
+Wire Wire Line
+	2050 7900 2050 8050
+Wire Wire Line
+	3550 7650 3650 7650
+Wire Wire Line
+	850  8950 850  9000
+Wire Wire Line
+	1100 8850 6150 8850
+Wire Wire Line
+	1350 6850 1350 8750
+Wire Bus Line
+	3750 1650 3750 8150
+Wire Bus Line
+	5650 1650 5650 8450
 $EndSCHEMATC

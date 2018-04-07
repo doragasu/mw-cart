@@ -1,35 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ESP8266
-LIBS:doragasu
+EESchema Schematic File Version 4
 LIBS:mega-wifi-cache
 EELAYER 26 0
 EELAYER END
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 "FLASH ROM"
 $EndDescr
 $Comp
-L S29GL032N U2
+L doragasu:S29GL032N U2
 U 1 1 561A024F
 P 6000 2850
 F 0 "U2" H 5600 4100 60  0000 C CNN
@@ -256,7 +225,7 @@ Text HLabel 5000 4150 0    60   Input ~ 0
 NoConn ~ 6700 3450
 NoConn ~ 6700 3650
 $Comp
-L VCC #PWR14
+L power:VCC #PWR14
 U 1 1 561C7245
 P 6750 4050
 F 0 "#PWR14" H 6750 3900 50  0001 C CNN
@@ -269,7 +238,7 @@ $EndComp
 Wire Wire Line
 	6700 4050 6750 4050
 $Comp
-L C C2
+L device:C C2
 U 1 1 561C7483
 P 6000 4750
 F 0 "C2" H 6025 4850 50  0000 L CNN
@@ -280,7 +249,7 @@ F 3 "" H 6000 4750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR15
+L power:VCC #PWR15
 U 1 1 561C7507
 P 6000 4600
 F 0 "#PWR15" H 6000 4450 50  0001 C CNN
@@ -291,7 +260,7 @@ F 3 "" H 6000 4600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR16
+L power:GND #PWR16
 U 1 1 561C7532
 P 6000 4900
 F 0 "#PWR16" H 6000 4650 50  0001 C CNN
