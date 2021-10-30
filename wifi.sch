@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:mega-wifi-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -166,7 +165,7 @@ NoConn ~ 4250 4850
 NoConn ~ 4250 4950
 NoConn ~ 4250 5050
 $Comp
-L device:R R3
+L Device:R R3
 U 1 1 5621824C
 P 3950 5100
 F 0 "R3" V 4030 5100 50  0000 C CNN
@@ -201,7 +200,7 @@ F 3 "" H 3950 4950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Crystal_Small Y1
+L Device:Crystal_Small Y1
 U 1 1 562186A7
 P 5800 5150
 F 0 "Y1" V 5800 5300 50  0000 C CNN
@@ -212,7 +211,7 @@ F 3 "" H 5800 5150 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C3
+L Device:C C3
 U 1 1 562187DC
 P 6100 5050
 F 0 "C3" V 6050 5150 50  0000 L CNN
@@ -223,7 +222,7 @@ F 3 "" H 6100 5050 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C4
+L Device:C C4
 U 1 1 56218812
 P 6100 5250
 F 0 "C4" V 6050 5350 50  0000 L CNN
@@ -264,7 +263,7 @@ NoConn ~ 5650 3650
 Text Notes 650  7700 0    60   ~ 0
 WARNING\n_________\n\nTo upload firmware on ESP8266 when pulling RESET high:\n- GPIO15 must be LOW.\n- GPIO0 must be LOW.\n- CH_PD must be HIGH.\n\nTo boot ESP8266 when pulling RESET high:\n- GPIO15 must be LOW.\n- GPIO0 must be HIGH.\n- CH_PD must be HIGH or the module will enter low power mode.
 $Comp
-L device:R R1
+L Device:R R1
 U 1 1 5624E3A5
 P 3500 4550
 F 0 "R1" V 3580 4550 50  0000 C CNN
@@ -275,7 +274,7 @@ F 3 "" H 3500 4550 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R2
+L Device:R R2
 U 1 1 5624E420
 P 3750 4700
 F 0 "R2" V 3830 4700 50  0000 C CNN
@@ -317,7 +316,7 @@ Wire Wire Line
 Text Notes 2200 4050 0    60   ~ 0
 All CS pins must be active,\nbut only one IOR or IOW pin\nmust be active for operation.
 $Comp
-L device:C C1
+L Device:C C1
 U 1 1 56250803
 P 4950 6150
 F 0 "C1" H 4975 6250 50  0000 L CNN
@@ -328,7 +327,7 @@ F 3 "" H 4950 6150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C6
+L Device:C C6
 U 1 1 5625097E
 P 8050 5200
 F 0 "C6" H 8075 5300 50  0000 L CNN
@@ -406,7 +405,7 @@ Wire Wire Line
 Text Label 5650 2850 0    60   ~ 0
 #W_PD
 $Comp
-L device:R R8
+L Device:R R8
 U 1 1 56233843
 P 9800 3100
 F 0 "R8" V 9700 3100 50  0000 C CNN
@@ -419,7 +418,7 @@ $EndComp
 Wire Wire Line
 	9000 3350 9400 3350
 $Comp
-L device:LED D1
+L Device:LED D1
 U 1 1 562339B0
 P 9550 3350
 AR Path="/562339B0" Ref="D1"  Part="1" 
@@ -440,7 +439,7 @@ Wire Wire Line
 Text Label 5650 3450 0    60   ~ 0
 #W_DAT
 $Comp
-L device:R R7
+L Device:R R7
 U 1 1 56237BB0
 P 9600 3900
 F 0 "R7" H 9530 3854 50  0000 R CNN
@@ -465,7 +464,7 @@ F 3 "" H 9600 4050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_NMOS_GSD Q1
+L Device:Q_NMOS_GSD Q1
 U 1 1 56238C3B
 P 3850 5450
 F 0 "Q1" H 4150 5500 50  0000 R CNN
@@ -497,7 +496,7 @@ Wire Wire Line
 	3600 3850 3600 4050
 Connection ~ 3600 4050
 $Comp
-L device:R R6
+L Device:R R6
 U 1 1 569B47C7
 P 9350 3900
 F 0 "R6" H 9280 3854 50  0000 R CNN
@@ -522,7 +521,7 @@ Wire Wire Line
 	9350 3750 9200 3750
 Connection ~ 9200 3750
 $Comp
-L device:R R5
+L Device:R R5
 U 1 1 569B4F32
 P 7050 2850
 F 0 "R5" V 7150 2900 50  0000 R CNN
@@ -608,7 +607,7 @@ HSYNC
 Text HLabel 7200 3450 0    60   Input ~ 0
 VSYNC
 $Comp
-L device:C C5
+L Device:C C5
 U 1 1 56C46DD0
 P 7050 4100
 F 0 "C5" H 7075 4200 50  0000 L CNN
@@ -619,7 +618,7 @@ F 3 "" H 7050 4100 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:R R4
+L Device:R R4
 U 1 1 56C46E52
 P 6850 3900
 F 0 "R4" V 6950 3950 50  0000 R CNN
@@ -670,9 +669,11 @@ Wire Wire Line
 Wire Wire Line
 	7050 3900 7150 3900
 $Comp
-L Connector:Conn_01x02 P1
+L Connector_Generic:Conn_01x02 P1
 U 1 1 5ACAF1FB
 P 10050 3550
+AR Path="/5ACAF1FB" Ref="P1"  Part="1" 
+AR Path="/5619415C/5ACAF1FB" Ref="P1"  Part="1" 
 F 0 "P1" H 10129 3496 50  0000 L CNN
 F 1 "Conn_01x02" H 10130 3451 50  0001 L CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 10050 3550 50  0001 C CNN

@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:mega-wifi-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -238,7 +237,7 @@ $EndComp
 Wire Wire Line
 	6700 4050 6750 4050
 $Comp
-L device:C C2
+L Device:C C2
 U 1 1 561C7483
 P 6000 4750
 F 0 "C2" H 6025 4850 50  0000 L CNN

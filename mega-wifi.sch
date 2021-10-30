@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:mega-wifi-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
@@ -769,7 +768,7 @@ NoConn ~ 1650 6950
 Text Label 5500 8650 2    60   ~ 0
 C_CLK
 $Comp
-L device:C C8
+L Device:C C8
 U 1 1 561DA569
 P 1400 2900
 F 0 "C8" H 1425 3000 50  0000 L CNN
@@ -780,7 +779,7 @@ F 3 "" H 1400 2900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP C7
+L Device:CP C7
 U 1 1 561DA6C6
 P 1150 2900
 F 0 "C7" H 1175 3000 50  0000 L CNN
@@ -854,7 +853,7 @@ Text Label 5250 1650 0    60   ~ 0
 Text Label 6100 5650 2    60   ~ 0
 #W
 $Comp
-L device:R R11
+L Device:R R11
 U 1 1 5620771C
 P 1350 5400
 F 0 "R11" H 1280 5354 50  0000 R CNN
@@ -866,7 +865,7 @@ F 4 "RMCF0805JT100K" H 1350 5400 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R15
+L Device:R R15
 U 1 1 56207A0F
 P 1500 5150
 F 0 "R15" V 1600 5150 50  0000 C CNN
@@ -947,7 +946,7 @@ UART inputs are 5V tolerant (but data lines aren't).\n
 Text Notes 800  10350 0    60   ~ 0
 3.3V linear regulator,\nIlimit,min = 1 A
 $Comp
-L device:C C9
+L Device:C C9
 U 1 1 5625E0C9
 P 1700 9700
 F 0 "C9" H 1725 9800 50  0000 L CNN
@@ -959,7 +958,7 @@ F 4 "CL21F104ZBCNNNC" H 1700 9700 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C10
+L Device:C C10
 U 1 1 5625E8FF
 P 2000 9700
 F 0 "C10" H 2025 9800 50  0000 L CNN
@@ -970,7 +969,7 @@ F 3 "" H 2000 9700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C11
+L Device:C C11
 U 1 1 5625EA93
 P 2300 9700
 F 0 "C11" H 2325 9800 50  0000 L CNN
@@ -981,7 +980,7 @@ F 3 "" H 2300 9700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C12
+L Device:C C12
 U 1 1 5625EC22
 P 2600 9700
 F 0 "C12" H 2625 9800 50  0000 L CNN
@@ -992,7 +991,7 @@ F 3 "" H 2600 9700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C13
+L Device:C C13
 U 1 1 5625EDB4
 P 2900 9700
 F 0 "C13" H 2925 9800 50  0000 L CNN
@@ -1025,7 +1024,7 @@ F 3 "" H 2450 9400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R14
+L Device:R R14
 U 1 1 561B880E
 P 1500 4750
 F 0 "R14" V 1400 4750 50  0000 C CNN
@@ -1509,7 +1508,7 @@ F 3 "" H 1150 11050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP C14
+L Device:CP C14
 U 1 1 5620A5AC
 P 1800 10800
 F 0 "C14" H 1825 10900 50  0000 L CNN
@@ -1588,7 +1587,7 @@ Entry Wire Line
 Text Label 6100 7950 2    60   ~ 0
 #OE
 $Comp
-L device:C C15
+L Device:C C15
 U 1 1 5695B5C9
 P 3200 9700
 F 0 "C15" H 3225 9800 50  0000 L CNN
@@ -1692,7 +1691,7 @@ F 4 "74LVC1G08W5-7" H 2650 7550 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R17
+L Device:R R17
 U 1 1 56965CA2
 P 2700 7900
 F 0 "R17" V 2800 7900 50  0000 C CNN
@@ -1711,7 +1710,7 @@ Wire Wire Line
 	3550 7900 3550 7650
 Connection ~ 3550 7650
 $Comp
-L device:R R16
+L Device:R R16
 U 1 1 56C15D44
 P 1500 6550
 F 0 "R16" V 1600 6600 50  0000 R CNN
@@ -1738,7 +1737,7 @@ Wire Wire Line
 Wire Wire Line
 	850  8950 6150 8950
 $Comp
-L device:R R12
+L Device:R R12
 U 1 1 56C2EF02
 P 1500 4150
 F 0 "R12" V 1600 4150 50  0000 C CNN
@@ -1749,7 +1748,7 @@ F 3 "" H 1500 4150 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R13
+L Device:R R13
 U 1 1 56C2F106
 P 1500 4450
 F 0 "R13" V 1600 4450 50  0000 C CNN
@@ -1764,7 +1763,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 4450 950  4450
 $Comp
-L device:R R9
+L Device:R R9
 U 1 1 56C318B7
 P 850 9150
 F 0 "R9" H 780 9104 50  0000 R CNN
@@ -1776,7 +1775,7 @@ F 4 "RMCF0805JT10K0" H 850 9150 60  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R10
+L Device:R R10
 U 1 1 56C344D0
 P 1100 9150
 F 0 "R10" H 1030 9104 50  0000 R CNN
@@ -1842,7 +1841,7 @@ F23 "VSYNC" I L 6150 8950 60
 $EndSheet
 NoConn ~ 3250 6950
 $Comp
-L device:R R18
+L Device:R R18
 U 1 1 57A27ECE
 P 1500 6850
 F 0 "R18" V 1600 6900 50  0000 R CNN
