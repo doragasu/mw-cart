@@ -1,3 +1,7 @@
+# WARNING: THIS PROJECT HAS MOVED
+
+You can find the most recent version at the [mw-cart GitLab project page](https://gitlab.com/doragasu/mw-cart). This repository will be kept as is, and will not be updated anymore.
+
 # mw-cart
 MegaWiFi Cartridge
 
